@@ -1,3 +1,4 @@
+<center><img src="https://media2.utp.edu.co/imagenes/Logo-UTP-Azul.png" alt="Identificador UTP" width="150" tabindex="0"></center>
 <h1 align="center">Basic Laravel Admin Panel</h1>
 <h3 align="center">A basic and simple admin panel for Laravel projects.</h3>
 <p align="center">
@@ -6,12 +7,15 @@
 <a href="https://packagist.org/packages/balajidharma/basic-laravel-admin-panel"><img src="https://poser.pugx.org/balajidharma/basic-laravel-admin-panel/license" alt="License"></a>
 </p>
 
+## Tools to use
+https://github.com/cmderdev/cmder/releases/download/v1.3.25/cmder.zip
+
 ## Laravel Admin Package
-This project was created using the laravel-admin package: https://github.com/balajidharma/laravel-admin.
+
 You can try it in your own Laravel installation by requiring the package:
 
 ```
-composer require balajidharma/laravel-admin
+https://github.com/mauriciom78/admin-app.git
 ```
 Then follow the package repository's installation instructions to publish assets and run the installer.
 
@@ -36,24 +40,7 @@ Then follow the package repository's installation instructions to publish assets
 
 ## Installation
 
-### With Docker Desktop
-- To get started, you need to install [Docker Desktop](https://www.docker.com/products/docker-desktop).
-- You may run the following command in your terminal
-- Windows open WSL2 Linux terminal. [Docker Desktop WSL 2 backend](https://docs.docker.com/desktop/windows/wsl/)
-- `docker run --rm --pull=always -v "$(pwd)":/opt -w /opt laravelsail/php84-composer:latest bash -c "composer create-project balajidharma/basic-laravel-admin-panel admin-app && cd admin-app && php artisan sail:install --with=mysql,redis,meilisearch,mailpit,selenium"`
-- `cd admin-app`
-- `./vendor/bin/sail pull mysql redis meilisearch mailpit selenium`
-- `./vendor/bin/sail build`
-- `sudo chown -R $USER:$USER .`
-- `./vendor/bin/sail up`
-- `./vendor/bin/sail artisan migrate --seed --seeder=AdminCoreSeeder`
-- `./vendor/bin/sail npm install`
-- `./vendor/bin/sail npm run dev`
-- Now open http://localhost/admin
-
-### Without Docker Desktop
 - To get started, you need to install [PHP Composer](https://getcomposer.org/).
-- `composer create-project balajidharma/basic-laravel-admin-panel admin-app`
 - `cd admin-app`
 - Create a new MYSQL database and update database details in `.env` file
 - `php artisan migrate --seed --seeder=AdminCoreSeeder`
@@ -114,5 +101,6 @@ php artisan laravel-admin:install --force
 </p>
 
 ## License
+This project was created using the laravel-admin package: https://github.com/balajidharma/laravel-admin.
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
